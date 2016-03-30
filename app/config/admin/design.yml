@@ -1,0 +1,10 @@
+
+easy_admin:
+    site_name: 'Daily Reports Backend'
+    design:
+        form_theme:   'vertical'
+        color_scheme: 'dark'
+        brand_color: '#76323F'
+        assets:
+            css:
+                - '/bundles/app/stylesheets/demo.css'

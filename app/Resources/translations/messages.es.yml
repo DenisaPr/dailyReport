@@ -1,0 +1,37 @@
+# Check out the 'messages_en.yml' for an explanation about the best practices
+# recommended to translate your backend efficiently.
+
+# main menu
+menu.category:     Categorías
+menu.product:      Productos
+menu.product.list: Listado de Productos
+menu.product.add:  Añadir Producto
+menu.customer:     Clientes
+menu.purchase:     Ventas
+menu.about:        Sobre EasyAdmin
+menu.about.home:   Sitio web oficial
+menu.about.docs:   Documentación
+menu.about.issues: Informar de errores
+
+# entity names, labels and titles
+Product: Producto
+Products: Productos
+Category: Categoría
+Categories: Categorías
+
+# entity properties
+Created at: Fecha creación
+Description: Descripción
+EAN-13: EAN-13
+Ean: EAN-13
+Enabled: Activado
+Features: Funcionalidades
+ID: ID
+Image: Imagen
+Image file: Archivo de la imagen
+Name: Nombre
+Price: Precio
+Tags: Etiquetas
+
+# help messages
+EAN-13 valid code. Leave empty if unknown.: Introduce un código EAN-13 válido. Déjalo vacío si no dispones del código.

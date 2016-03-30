@@ -1,3 +1,7 @@
+app_company:
+    resource: "@AppBundle/Controller/CompanyController.php"
+    type:     annotation
+
 _homepage:
     path: /
     defaults: { _controller: FrameworkBundle:Redirect:redirect, route: easyadmin, permanent: true }

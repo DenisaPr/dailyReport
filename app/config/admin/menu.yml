@@ -19,6 +19,7 @@ easy_admin:
                   - { entity: 'Product', icon: 'plus-circle', label: 'menu.product.add', params: { action: 'new' } }
             - { label: 'menu.customer', entity: 'User', icon: 'users' }
             - { label: 'menu.purchase', entity: 'Purchase', icon: 'credit-card', params: { sortField: 'deliveryDate' } }
+            - { label: 'Company', entity: 'Company', icon: 'building-o'}
             # - { label: 'menu.about' }
             # - { label: 'menu.about.home', url: 'https://github.com/javiereguiluz/EasyAdminBundle', icon: 'home', target: '_blank' }
             # - { label: 'menu.about.docs', url: 'https://github.com/javiereguiluz/EasyAdminBundle#getting-started-guide', icon: 'book', target: '_blank' }

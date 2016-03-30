@@ -1,0 +1,6 @@
+easy_admin:
+    entities:
+        Company:
+            class: AppBundle\Entity\Company
+            label: 'Company'
+            

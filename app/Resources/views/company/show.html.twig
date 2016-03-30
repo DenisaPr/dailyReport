@@ -1,0 +1,84 @@
+{# {% extends 'base.html.twig' %} #}
+
+{% block body %}
+    <h1>Company</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ company.id }}</td>
+            </tr>
+            <tr>
+                <th>Nume</th>
+                <td>{{ company.nume }}</td>
+            </tr>
+            <tr>
+                <th>Prenume</th>
+                <td>{{ company.prenume }}</td>
+            </tr>
+            <tr>
+                <th>Nrordregcoman</th>
+                <td>{{ company.nrOrdRegComAn }}</td>
+            </tr>
+            <tr>
+                <th>Cif</th>
+                <td>{{ company.cif }}</td>
+            </tr>
+            <tr>
+                <th>Sediu</th>
+                <td>{{ company.sediu }}</td>
+            </tr>
+            <tr>
+                <th>Judetul</th>
+                <td>{{ company.judetul }}</td>
+            </tr>
+            <tr>
+                <th>Contul</th>
+                <td>{{ company.contul }}</td>
+            </tr>
+            <tr>
+                <th>Banca</th>
+                <td>{{ company.banca }}</td>
+            </tr>
+            <tr>
+                <th>Seria</th>
+                <td>{{ company.seria }}</td>
+            </tr>
+            <tr>
+                <th>Nrbi</th>
+                <td>{{ company.nrBi }}</td>
+            </tr>
+            <tr>
+                <th>Eliberat</th>
+                <td>{{ company.eliberat }}</td>
+            </tr>
+            <tr>
+                <th>Telefon</th>
+                <td>{{ company.telefon }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ company.email }}</td>
+            </tr>
+            <tr>
+                <th>Numefirma</th>
+                <td>{{ company.numeFirma }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('company_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('company_edit', { 'id': company.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

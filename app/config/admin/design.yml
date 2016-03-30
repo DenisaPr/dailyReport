@@ -8,3 +8,4 @@ easy_admin:
         assets:
             css:
                 - '/bundles/app/stylesheets/demo.css'
+            favicon: '/bundles/app/img/d.jpg'

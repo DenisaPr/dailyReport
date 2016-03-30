@@ -1,0 +1,65 @@
+{# {% extends 'base.html.twig' %} #}
+
+{% block body %}
+    <h1>Company list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nume</th>
+                <th>Prenume</th>
+                <th>Nrordregcoman</th>
+                <th>Cif</th>
+                <th>Sediu</th>
+                <th>Judetul</th>
+                <th>Contul</th>
+                <th>Banca</th>
+                <th>Seria</th>
+                <th>Nrbi</th>
+                <th>Eliberat</th>
+                <th>Telefon</th>
+                <th>Email</th>
+                <th>Numefirma</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for company in companies %}
+            <tr>
+                <td><a href="{{ path('company_show', { 'id': company.id }) }}">{{ company.id }}</a></td>
+                <td>{{ company.nume }}</td>
+                <td>{{ company.prenume }}</td>
+                <td>{{ company.nrOrdRegComAn }}</td>
+                <td>{{ company.cif }}</td>
+                <td>{{ company.sediu }}</td>
+                <td>{{ company.judetul }}</td>
+                <td>{{ company.contul }}</td>
+                <td>{{ company.banca }}</td>
+                <td>{{ company.seria }}</td>
+                <td>{{ company.nrBi }}</td>
+                <td>{{ company.eliberat }}</td>
+                <td>{{ company.telefon }}</td>
+                <td>{{ company.email }}</td>
+                <td>{{ company.numeFirma }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('company_show', { 'id': company.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('company_edit', { 'id': company.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('company_new') }}">Create a new entry</a>
+        </li>
+    </ul>
+{% endblock %}
